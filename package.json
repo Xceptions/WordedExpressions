@@ -1,0 +1,23 @@
+{
+  "name": "wordedexpressions",
+  "version": "1.0.0",
+  "description": "An English-like way of querying Regular Expressions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xceptions/wordedexpressions.git"
+  },
+  "keywords": [
+    "query",
+    "regular expressions"
+  ],
+  "author": "Kenechukwu Agbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xceptions/wordedexpressions/issues"
+  },
+  "homepage": "https://github.com/xceptions/wordedexpressions#readme"
+}

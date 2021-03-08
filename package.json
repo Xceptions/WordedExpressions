@@ -2,9 +2,10 @@
   "name": "wordedexpressions",
   "version": "1.0.0",
   "description": "An English-like way of querying Regular Expressions",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/xceptions/wordedexpressions/issues"
   },
-  "homepage": "https://github.com/xceptions/wordedexpressions#readme"
+  "homepage": "https://github.com/xceptions/wordedexpressions#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
 }

@@ -1,9 +1,10 @@
-// import WordedExpressions from "../src/index"
+import assert from 'assert';
+import { RegexQuery } from "../src/index.js";
 
-// let result = WordedExpressions("my test input");
-// console.log(result);
-
-import RegexQuery from "../src/regexquery";
-
-let result = RegexQuery("count a in said GLOBAL CASE");
-console.log(result);
+describe('Testing RegexQuery', () => {
+    it('should return 1 for count of a', done => {
+        let result = RegexQuery("count a in said GLOBAL CASE");
+        assert.strictEqual(1, result)
+        done();
+    });
+});

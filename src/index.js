@@ -1,29 +1,7 @@
-// class WordedExpressionsClass {
-//     constructor(input_msg) {
-//         this.result;
-//         this.inp = input_msg
-//     }
-//     result() {
-//         return this.inp
-//     }
-// }
-
-// function WordedExpressions ( query ) {
-//     // figuring out how to return something from the class
-//     let result = new WordedExpressionsClass( query ).result;
-//     return result
-// }
-
-// module.exports = {
-//     WordedExpressions,
-//     WordedExpressionsClass
-// }
-
-
 "use strict"
 
-
-class RegexQueryClass {
+class WordedExpressions {
+    /** Class that holds all the code */
     constructor ( query ) {
         this.result;
         this.todo = {
@@ -113,11 +91,7 @@ class RegexQueryClass {
         {
             let to_find = new RegExp(this.todo.subject, this.todo.global_status);
             let str = this.todo.object;
-            if ( to_find.test(str) ) {
-                this.result = "yes"
-            } else {
-                this.result = "no"
-            }
+            this.result = to_find.test(str);
             return this.result;
         }
         else
@@ -143,12 +117,12 @@ class RegexQueryClass {
 }
 
 // An alternative if you wish to use it as a function
-function RegexQuery ( query ) {
-    let result = new RegexQueryClass( query ).result;
+function WordedExpression ( query ) {
+    let result = new WordedExpressions( query ).result;
     return result;
 }
 
 module.exports = {
-    RegexQueryClass,
-    RegexQuery
+    WordedExpressions,
+    WordedExpression
 }

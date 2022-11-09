@@ -1,12 +1,21 @@
 ### Worded Expressions
 An English-like way for querying Regular Expressions
 
-*version 1*
+**Special functions**
 
-Special functions: email validation
-phone number validation
+1. Email validation
+2. Phone number validation
 
-// RegexQuery("FIND a IN happy") // returns a
-// RegexQuery("REPLACE a WITH b IN happy") // returns hbppy
-// RegexQuery("IS p IN happy") // returns yes, otherwise returns no
-// RegexQuery("COUNT p IN happy") // returns 2
+```console
+WordedExpression("FIND a IN happy")
+> a
+
+WordedExpression("REPLACE a WITH b IN happy")
+> hbppy
+
+WordedExpression("IS p IN happy")
+> true
+
+WordedExpression("COUNT p IN happy")
+> 2
+```
